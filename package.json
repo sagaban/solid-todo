@@ -1,21 +1,24 @@
 {
-  "name": "solid-todo",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@kobalte/core": "^0.11.2",
-    "solid-js": "^1.8.7"
-  },
-  "devDependencies": {
-    "solid-devtools": "^0.29.2",
-    "typescript": "^5.2.2",
-    "vite": "^5.0.8",
-    "vite-plugin-solid": "^2.8.0"
-  }
+	"name": "solid-todo",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"format": "biome format ./src --write",
+		"lint": "biome lint ./src"
+	},
+	"dependencies": {
+		"@kobalte/core": "^0.11.2",
+		"solid-js": "^1.8.7"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.4.1",
+		"solid-devtools": "^0.29.2",
+		"typescript": "^5.2.2",
+		"vite": "^5.0.8",
+		"vite-plugin-solid": "^2.8.0"
+	}
 }

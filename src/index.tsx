@@ -1,12 +1,13 @@
 /* @refresh reload */
 
-import 'solid-devtools'
+import "solid-devtools";
 
-import { render } from 'solid-js/web'
+import { render } from "solid-js/web";
 
-import './index.css'
-import App from './App'
+import "./index.css";
+import App from "./App";
 
-const root = document.getElementById('root')
+const root = document.getElementById("root");
 
-render(() => <App />, root!)
+// biome-ignore lint/style/noNonNullAssertion: <explanation>
+render(() => <App />, root!);
